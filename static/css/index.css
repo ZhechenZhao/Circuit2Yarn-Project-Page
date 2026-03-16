@@ -178,11 +178,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--text-secondary);
   width: fit-content;
-  font-weight: 600;
   border-radius: var(--border-radius);
-  max-width: 120px;
+  max-width: 120px !important;
   height: auto;
   padding: 0.5rem;
   margin-right: 0.5rem;
