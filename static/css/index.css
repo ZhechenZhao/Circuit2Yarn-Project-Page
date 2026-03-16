@@ -100,16 +100,23 @@ body {
 }
 
 .hero-body {
-  padding: 4rem 1.5rem;
+  padding: 4rem 0rem 1rem 0rem;
 }
 
 .teaser .hero-body {
-  padding-top: 2rem;
+  padding-top: 1rem;
   padding-bottom: 4rem;
 }
 
 .teaser {
   font-family: 'Inter', sans-serif;
+}
+
+.teaser .subtitle {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
 }
 
 
@@ -120,6 +127,7 @@ body {
     color: var(--text-primary) !important;
     margin-bottom: 2rem !important;
     line-height: 1.1 !important;
+    font-size: 2.5rem !important;
 }
 
 .publication-banner {
@@ -152,25 +160,32 @@ body {
 }
 
 .publication-venue {
-    color: var(--text-secondary);
-    width: fit-content;
-    font-weight: 600;
-    background: var(--background-accent);
-    padding: 0.5rem 1rem;
-    border-radius: var(--border-radius);
-    margin-top: 1rem;
-    display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-secondary);
+  width: fit-content;
+  font-weight: 600;
+  border-radius: var(--border-radius);
+  font-size: 1.2rem;
 }
 
-.publication-awards {
-    color: #ef4444;
-    width: fit-content;
-    font-weight: 700;
-    background: linear-gradient(135deg, #fef2f2, #fee2e2);
-    padding: 0.5rem 1rem;
-    border-radius: var(--border-radius);
-    border-left: 4px solid #ef4444;
-    margin-top: 1rem;
+.publication-venue-text {
+  margin: 0 1rem;
+}
+
+.publication-venue-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-secondary);
+  width: fit-content;
+  font-weight: 600;
+  border-radius: var(--border-radius);
+  max-width: 120px;
+  height: auto;
+  padding: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .publication-authors a {
@@ -198,6 +213,19 @@ body {
 
 .publication-authors a:hover {
     color: var(--primary-hover) !important;
+}
+
+.publication-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.link-block {
+  display: flex;
+  align-items: center;
 }
 
 .author-block {
@@ -339,6 +367,11 @@ body {
 
 .content.has-text-justified p {
   margin-bottom: 1.5rem;
+}
+
+.paragraph {
+  margin-top: 1rem;
+  color: var(--text-secondary);
 }
 
 /* Footer Improvements */
@@ -687,7 +720,6 @@ code {
   
   .link-block {
     display: block;
-    margin-bottom: 0.5rem;
   }
   
   .button {
