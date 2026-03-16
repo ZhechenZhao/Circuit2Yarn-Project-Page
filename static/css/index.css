@@ -181,6 +181,7 @@ body {
   width: fit-content;
   border-radius: var(--border-radius);
   max-width: 120px !important;
+  width: 120px !important;
   height: auto;
   padding: 0.5rem;
   margin-right: 0.5rem;
